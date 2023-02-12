@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  margin-top: 4rem;
+  font-size: 3rem;
+  color: red;
+}
+.player-text {
+  margin: 2rem;
+}
+
+.game-section {
+  width: 24rem;
+  height: 24rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 1px solid black;
+}
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.7rem;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.block:hover {
+  border: 3px solid rgb(119, 1, 1);
+}
+#error {
+  font-size: 1.3rem;
+  margin-top: 1.6rem;
+  letter-spacing: 3px;
+  color: red;
+}
